@@ -5,7 +5,7 @@ interface
 const
   L=100;
 type
-  Graph = array[1..L,1..L] of integer;  
+  Graph = array[1..L,1..L] of integer;  // граф имеет вид многомерного массива
 var
   n:integer;
 
@@ -16,7 +16,7 @@ procedure Menu(var item:integer);
 
 implementation
 
-procedure Floyd(var a,b:graph);    
+procedure Floyd(var a,b:graph);       // Алгоритм Флойда
 var
   i,j,k:integer;
 begin
@@ -36,7 +36,7 @@ begin
   Writeln('>>>>>>>>>>Floyd have completed<<<<<<<<<<');
 end;
 
-procedure ReadGraph(var a:graph); 
+procedure ReadGraph(var a:graph);     // Задаю граф в виде матрицы смежности
 var
   i,j:integer;
 begin
@@ -51,7 +51,7 @@ begin
 end;
 
 
-Procedure Output(var a,b:graph);
+Procedure Output(var a,b:graph);   // Вывод кратчайших расстояний и путей
 var
   i,j: integer;
 begin
