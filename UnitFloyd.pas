@@ -25,7 +25,7 @@ begin
     for i:=1 to n do
       for j:=1 to n do
       begin
-        if (a[i,j] > a[i,k]+a[k,i]) then
+        if (a[i,j] > a[i,k]+a[k,j]) then
         begin
           a[i,j]:=a[i,k]+a[k,j];
           b[i,j]:=k;
